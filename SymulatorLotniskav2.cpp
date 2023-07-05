@@ -9,11 +9,7 @@ int main()
     int numer;
     int numer2;
     string zgoda;
-    bool exitProgram = false;
-    do {
-        main_menu();
-        //czysczenie_konsoli2();
-    } while (!exitProgram);
+    
 
     Samolot sam1(1, "Boeing", 747, "ziemia", "brak", "brak", "sprawny");
     samoloty.push_back(sam1);
@@ -179,7 +175,11 @@ int main()
     cout << "Kliknij m aby wyświetlić listę dostępnych maszyn." << endl;
     wyswietl_menu();
     czyszczenie_konsoli();
-   
+    bool exitProgram = false;
+    do {
+        main_menu();
+        //czysczenie_konsoli2();
+    } while (!exitProgram);
     
     return 0;
 }
